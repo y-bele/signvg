@@ -36,4 +36,4 @@ Txantiloia egoki prestatu ondoren `index.html` fitxategian gehitu, selektorearen
 
 ## Lizentzia
 
-GNU GPL 2024
+MIT 2024
