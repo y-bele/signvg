@@ -16,7 +16,7 @@ Txantiloiean hurrengo IDak dituzten web elementu populagarriak sortu beharko dir
 ```
 #name - Erabiltzailearen izen abizenak
 #title - Lan postua
-#chat - Esaldia edo zita
+#quote - Esaldia edo zita
 #email - Eposta pertsonala
 #phone - Telefono pertsonala
 #mastodon - https://mastodon.eus erabiltzaile pertsonala
@@ -36,4 +36,4 @@ Txantiloia egoki prestatu ondoren `index.html` fitxategian gehitu, selektorearen
 
 ## Lizentzia
 
-MIT 2024
+GNU GPL 2024
