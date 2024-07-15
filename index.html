@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eposta Sinadura Sortzailea</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <script src="js/colorScheme.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1><object class="headerIcon" data="assets/img/mail.svg" width="24" height="24"></object> SVG Eposta Sinadura</h1>
+            <form id="signatureForm">
+                <div class="formGroup">
+                    <div class="fullField"><h2>Pertsonala</h2></div>
+
+                    <div>
+                        <label for="name"><object data="assets/img/user.svg" width="12" height="12"></object> Izen Abizena:</label>
+                        <input type="text" id="name" name="name" >
+                    </div>
+
+                    <div>
+                        <label for="title"><object data="assets/img/cap.svg" width="12" height="12"></object> Lan postua:</label>
+                        <input type="text" id="title" name="title" >
+                    </div>
+
+                    <div class="fullField">
+                        <label for="chat"><object data="assets/img/chat.svg" width="12" height="12"></object> Esaldia:</label>
+                        <input type="text" id="chat" name="chat" >
+                    </div>
+
+                    <div>
+                        <label for="email"><object data="assets/img/mail.svg" width="12" height="12"></object> Eposta:</label>
+                        <input type="email" id="email" name="email" >
+                    </div>
+
+                    <div>
+                        <label for="phone"><object data="assets/img/phone.svg" width="12" height="12"></object> Telefonoa:</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+
+                    <div>
+                        <label for="mastodonUrl"><object data="assets/img/mastodon.svg" width="12" height="12"></object> Mastodon esteka:</label>
+                        <input type="url" id="mastodonUrl" name="mastodonUrl">
+                    </div>
+
+                    <div>
+                        <label for="mastodonUser"><object data="assets/img/mastodon.svg" width="12" height="12"></object> Mastodon erabiltzailea:</label>
+                        <input type="text" id="mastodonUser" name="mastodonUser">
+                    </div>
+
+                    <div class="fullField"><h2>Kooperatiba</h2></div>
+
+                    <div>
+                        <label for="coop"><object data="assets/img/coop.svg" width="12" height="12"></object> Proiektua:</label>
+                        <input type="text" id="coop" name="coop">
+                    </div>
+
+                    <div>
+                        <label for="coopPhone"><object data="assets/img/phone.svg" width="12" height="12"></object> Telefonoa:</label>
+                        <input type="text" id="coopPhone" name="coopPhone">
+                    </div>
+
+                    <div>
+                        <label for="website"><object data="assets/img/web.svg" width="12" height="12"></object> Webgunea:</label>
+                        <input type="url" id="website" name="website">
+                    </div>
+
+                    <div>
+                        <label for="coopEmail"><object data="assets/img/mail.svg" width="12" height="12"></object> Eposta:</label>
+                        <input type="email" id="coopEmail" name="coopEmail" >
+                    </div>
+
+                    <div>
+                        <label for="coopMastodonUrl"><object data="assets/img/mastodon.svg" width="12" height="12"></object> Mastodon esteka:</label>
+                        <input type="url" id="coopMastodonUrl" name="coopMastodonUrl">
+                    </div>
+
+                    <div>
+                        <label for="coopMastodonUser"><object data="assets/img/mastodon.svg" width="12" height="12"></object> Mastodon erabiltzailea:</label>
+                        <input type="text" id="coopMastodonUser" name="coopMastodonUser">
+                    </div>
+
+                    <div>
+                        <label for="coopColor"><object data="assets/img/color.svg" width="12" height="12"></object> Ikono kolorea:</label>
+                        <input type="color" id="coopColor" name="coopColor">
+                    </div>
+
+                    <div>
+                        <label for="linkColor"><object data="assets/img/color.svg" width="12" height="12"></object> Esteka kolorea:</label>
+                        <input type="color" id="linkColor" name="linkColor">
+                    </div>
+
+                    <div >
+                        <label for="logoSvg"><object data="assets/img/code.svg" width="12" height="12"></object> Marka SVG:</label>
+                        <input type="text" id="logoSvg" name="logoSvg">
+                    </div>                    
+
+                    <div class="fullField">
+                        <label for="design"><object data="assets/img/brush.svg" width="12" height="12"></object> Diseinua:</label>
+                        <select id="design" name="design">
+                            <option value="design1">Zerrenda</option>
+                            <option value="design2">Proiektua 1</option>
+                            <option value="design3">Zutabeak 1</option>
+                            <option value="design4">Zutabeak 2</option>
+                            <option value="design5">Proiektua 2</option>
+                        </select>
+                    </div>
+                    <div class="fullField">
+                        <button type="submit">Sortu sinadura</button>
+                    </div>        
+                </div>                
+            </form>
+
+            <div>
+                <details class="sourceCode">
+                    <summary>Kode iturburua ikusi</summary>
+                    <div id="htmlOutput"></div>
+                </details>
+            </div>
+        </div>
+
+        <div id="signatureContainer">
+            <div id="signatureOutput"></div>
+            <button id="copyButton" style="display: none;">🔥 Kopiatu</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <div><small>Made with ♥️ by <a href="https://talaios.coop">Talaios Koop</a></small></div>
+        <label id="theme-switch" class="theme-switch" for="checkbox_theme">
+            <input type="checkbox" id="checkbox_theme">
+        </label>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/colorSwitch.js"></script>
+</body>
+</html>

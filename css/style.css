@@ -1,0 +1,229 @@
+/** VARS **/
+:root {
+    --highlight: blue;
+    --background: #fefefe;
+    --text: #222;
+    --label: #5b5b5b;
+
+    --button: var(--highlight);
+    --buttonHover: var(--highlight);
+    --buttonText: var(--background);
+
+    --borderColor: #ddd;
+    --border: 1px solid var(--borderColor);
+
+    --shadow: 0 0 20px -15px var(--highlight), 0 0 50px -30px #222;
+    --inputShadow: 0 0 5px 0 #f0f0f0, inset 0 0 2px #ecebeb;
+}
+
+[data-theme="dark"] {
+    --highlight: blue;
+    --background: #222;
+    --text: #c9c9c9;
+    --label: #5b5b5b;
+
+    --button: var(--highlight);
+    --buttonHover: var(--highlight);
+    --buttonText: var(--text);
+
+    --borderColor: #555;
+    --border: 1px solid var(--borderColor);
+
+    --shadow: 0 0 20px -25px var(--highlight), 0 0 50px 0 #000, inset 0 0 5px #2e2e2e;
+    --inputShadow: 0 0 5px 0 #111, inset 0 0 2px #2e2e2e;
+}
+
+/** CONTAINERS **/
+html {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4rem;
+    align-content: space-between;
+}
+
+.card {
+    max-width: 400px;
+    background-color: var(--background);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+ #signatureContainer {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1rem;
+    justify-content: center;
+    flex-basis: 50%;
+    max-height: 100vh;
+ }
+
+/** FORM **/
+#signatureForm {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#signatureForm .formGroup {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+    align-content: space-between;
+}
+
+#signatureForm .formGroup div {
+    flex-grow: 1;
+}
+
+#signatureForm .formGroup div.fullField {
+    flex-basis: 100%;
+}
+
+/** ELEMENTS **/
+a {
+    color: var(--text);
+}
+
+a:hover {
+    color: var(--highlight);
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.headerIcon {
+    position: relative;
+    top: 3px;
+    filter: contrast(10);
+}
+
+html[data-theme="dark"] .headerIcon {
+    filter: contrast(0);
+}
+
+h2 {
+    font-weight: bold;
+    line-height: 1;
+    font-size: 0.8rem;
+    margin-bottom: -0.5rem;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 80%;
+    color: var(--label);
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input, select {
+    background: var(--background);
+    box-shadow: var(--inputShadow);
+    border: var(--border);
+    color: var(--text);
+}
+
+input[type="color"] {
+    padding: 0;
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
+}
+
+/** BUTTONS **/
+#copyButton {
+    background-color: var(--background);
+    border: 1px solid var(--text);
+    color: var(--text);
+    max-width: 150px;
+}
+
+button {
+    background-color: var(--text);
+    color: var(--background);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+/** SOURCE CODE BUTTON **/
+.sourceCode {
+    font-size: 80%;
+}
+
+.sourceCode summary {
+    background-color: var(--background);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sourceCode summary:hover {
+    cursor: pointer;
+}
+
+#htmlOutput {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--background);
+    border: var(--border);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/** FOOTER **/
+footer {
+    display: flex;
+    padding: 1rem;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/** COLOR SCHEME SWITCH **/
+
+html[data-theme="light"] #theme-switch, html #theme-switch {
+    background-image: url('../assets/img/moon.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+html[data-theme="dark"] #theme-switch {
+    background-image: url('../assets/img/sun.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#theme-switch input {
+    cursor: pointer;
+    background: none;
+    border: none;
+    appearance: none;
+    box-shadow: none;
+}
