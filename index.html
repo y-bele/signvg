@@ -17,7 +17,7 @@
                     <div class="fullField"><h2>Pertsonala</h2></div>
 
                     <div>
-                        <label for="name"><object data="assets/img/user.svg" width="12" height="12"></object> Izen Abizena:</label>
+                        <label for="name"><object data="assets/img/user.svg" width="12" height="12"></object> Izen Abizenak:</label>
                         <input type="text" id="name" name="name" >
                     </div>
 
@@ -54,7 +54,7 @@
                     <div class="fullField"><h2>Kooperatiba</h2></div>
 
                     <div>
-                        <label for="coop"><object data="assets/img/coop.svg" width="12" height="12"></object> Proiektua:</label>
+                        <label for="coop"><object data="assets/img/coop.svg" width="12" height="12"></object> Izena:</label>
                         <input type="text" id="coop" name="coop">
                     </div>
 
@@ -83,25 +83,32 @@
                         <input type="text" id="coopMastodonUser" name="coopMastodonUser">
                     </div>
 
-                    <div>
-                        <label for="coopColor"><object data="assets/img/color.svg" width="12" height="12"></object> Ikono kolorea:</label>
-                        <input type="color" id="coopColor" name="coopColor">
-                    </div>
-
-                    <div>
-                        <label for="linkColor"><object data="assets/img/color.svg" width="12" height="12"></object> Esteka kolorea:</label>
-                        <input type="color" id="linkColor" name="linkColor">
-                    </div>
-
-                    <div>
+                    <div title="SVG etiketari fill currentColor gehitu, logoak irakurle ilun eta argietan kontraste egokia izango duela ziurtatzeko.">
                         <label for="logoSvg"><object data="assets/img/code.svg" width="12" height="12"></object> Marka SVG:</label>
                         <input type="text" id="logoSvg" name="logoSvg">
                     </div>
 
-                    <div>
+                    <div title="Mezuaren ohar legala txertatzeko gunea. HTML maketazioa erabil dezakezu LOPD, GDPR, edo bestelako orrialde edo arduradunen helbideak txertatzeko.">
                         <label for="legalText"><object data="assets/img/code.svg" width="12" height="12"></object> Ohar legala:</label>
                         <input type="text" id="legalText" name="legalText">
                     </div>
+
+                    <div>
+                        <div class="colorCheckbox">
+                            <input type="checkbox" id="currentCoopColorCheckbox" name="currentCoopColorCheckbox">
+                            <label title="Ikonoen kolorea aukeratzean, eposta irakurle ilun eta argietan beharrezko kontrastea sortzen dela ziurtatu." for="coopColor"> Ikono kolorea:</label>
+                        </div>
+                        <input type="color" id="coopColor" name="coopColor">
+                    </div>
+
+                    <div>
+                        <div class="colorCheckbox">
+                            <input type="checkbox" id="currentUrlColorCheckbox" name="currentUrlColorCheckbox">
+                            <label title="Esteka guztien kolorea aukeratzean, eposta irakurle ilun eta argietan beharrezko kontrastea sortzen dela ziurtatu." for="linkColor"> Esteka kolorea:</label>
+                        </div>
+                        <input type="color" id="linkColor" name="linkColor">
+                    </div>
+
 
                     <div class="fullField">
                         <label for="design"><object data="assets/img/brush.svg" width="12" height="12"></object> Diseinua:</label>

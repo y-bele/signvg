@@ -14,23 +14,25 @@
 
     --shadow: 0 0 20px -15px var(--highlight), 0 0 50px -30px #222;
     --inputShadow: 0 0 5px 0 #f0f0f0, inset 0 0 2px #ecebeb;
+    --objectColor: contrast(0) brightness(1);
 }
 
 [data-theme="dark"] {
     --highlight: blue;
-    --background: #111;
+    --background: #222;
     --text: #c9c9c9;
-    --label: #5b5b5b;
+    --label: #b0b0b0;
 
     --button: var(--highlight);
     --buttonHover: var(--highlight);
     --buttonText: var(--text);
 
-    --borderColor: #555;
+    --borderColor: #484848;
     --border: 1px solid var(--borderColor);
 
     --shadow: 0 0 20px -25px var(--highlight), 0 0 50px 0 #000, inset 0 0 5px #222;
     --inputShadow: 0 0 5px 0 #111, inset 0 0 2px #222;
+    --objectColor: contrast(0) brightness(1);
 }
 
 /** CONTAINERS **/
@@ -136,9 +138,13 @@ label {
     color: var(--label);
 }
 
+object {
+    filter: var(--objectColor);
+}
+
 input, select, button {
     width: 100%;
-    padding: 10px;
+    padding: 0.3rem 0.5rem;
     box-sizing: border-box;
     border-radius: 5px;
 }
@@ -157,6 +163,22 @@ input[type="color"] {
 
 select {
     cursor: pointer;
+}
+
+.colorCheckbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: last baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.colorCheckbox input {
+    flex-basis: 14px;
+    align-self: last baseline;
+    margin: 0;
+    position: relative;
+    top: 2px;
 }
 
 /** BUTTONS **/
