@@ -90,6 +90,7 @@ html {
 
 #signatureForm .formGroup div {
     flex-grow: 1;
+    flex-basis: 49%;
 }
 
 #signatureForm .formGroup div.fullField {
