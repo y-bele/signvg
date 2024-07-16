@@ -272,12 +272,3 @@ html[data-theme="dark"] #theme-switch {
 footer small:hover .taupadaAnim {
     animation: taupada 1s infinite ease-in-out;
 }
-
-@keyframes su {
-    0% {font-size: 100%;}
-    50% {font-size: 80%;}
-}
-
-#copyButton:hover .suAnim {
-    animation: su 1s infinite ease-in-out;
-}
