@@ -34,6 +34,9 @@ Txantiloia egoki prestatu ondoren `index.html` fitxategian gehitu, selektorearen
 <option value="design6">IZENA</option>
 ```
 
+## Baliabideak
+ - [Heroicons](https://heroicons.com/)
+
 ## Lizentzia
 
 MIT 2024

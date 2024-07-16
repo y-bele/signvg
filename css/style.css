@@ -18,7 +18,7 @@
 
 [data-theme="dark"] {
     --highlight: blue;
-    --background: #222;
+    --background: #111;
     --text: #c9c9c9;
     --label: #5b5b5b;
 
@@ -29,8 +29,8 @@
     --borderColor: #555;
     --border: 1px solid var(--borderColor);
 
-    --shadow: 0 0 20px -25px var(--highlight), 0 0 50px 0 #000, inset 0 0 5px #2e2e2e;
-    --inputShadow: 0 0 5px 0 #111, inset 0 0 2px #2e2e2e;
+    --shadow: 0 0 20px -25px var(--highlight), 0 0 50px 0 #000, inset 0 0 5px #222;
+    --inputShadow: 0 0 5px 0 #111, inset 0 0 2px #222;
 }
 
 /** CONTAINERS **/
@@ -59,13 +59,20 @@ html {
     box-shadow: var(--shadow);
 }
 
- #signatureContainer {
+#signatureContainer {
     display: flex;
     flex-flow: column wrap;
     padding: 1rem;
     justify-content: center;
     flex-basis: 50%;
     max-height: 100vh;
+ }
+
+ @media screen and (max-width:1098px) {
+     #signatureContainer {
+        max-height: 100%;
+        flex-basis: 100%;
+     }    
  }
 
 /** FORM **/
@@ -226,4 +233,28 @@ html[data-theme="dark"] #theme-switch {
     border: none;
     appearance: none;
     box-shadow: none;
+}
+
+/** ANIMATION **/
+@keyframes taupada {
+    0% {font-size: 100%;}
+    40% {font-size: 100%;}
+    50% {font-size: 120%}
+    60% {font-size: 100%;}
+    80% {font-size: 100%;}
+    90% {font-size: 120%;}
+    100% {font-size: 100%;}
+}
+
+footer small:hover .taupadaAnim {
+    animation: taupada 1s infinite ease-in-out;
+}
+
+@keyframes su {
+    0% {font-size: 100%;}
+    50% {font-size: 80%;}
+}
+
+#copyButton:hover .suAnim {
+    animation: su 1s infinite ease-in-out;
 }
