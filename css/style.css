@@ -1,6 +1,6 @@
 /** VARS **/
 :root {
-    --highlight: blue;
+    --highlight: #be1931;
     --background: #fefefe;
     --text: #222;
     --label: #5b5b5b;
@@ -18,7 +18,7 @@
 }
 
 [data-theme="dark"] {
-    --highlight: blue;
+    --highlight: #be1931;
     --background: #222;
     --text: #c9c9c9;
     --label: #b0b0b0;
