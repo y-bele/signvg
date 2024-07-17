@@ -198,6 +198,10 @@ button:hover {
     opacity: .8;
 }
 
+.submitButton {
+    margin: 1rem 0;
+}
+
 /** SOURCE CODE BUTTON **/
 .sourceCode {
     font-size: 80%;
