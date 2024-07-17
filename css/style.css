@@ -166,19 +166,16 @@ select {
 }
 
 .colorCheckbox {
-    display: flex;
-    justify-content: flex-start;
-    align-items: last baseline;
-    gap: 0.5rem;
     margin-bottom: 0.2rem;
 }
 
 .colorCheckbox input {
-    flex-basis: 14px;
-    align-self: last baseline;
+    width: 14px;
     margin: 0;
-    position: relative;
-    top: 2px;
+}
+
+.colorCheckbox label {
+    display: inline-block;
 }
 
 /** BUTTONS **/
