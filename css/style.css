@@ -1,6 +1,6 @@
 /** VARS **/
 :root {
-    --highlight: blue;
+    --highlight: #be1931;
     --background: #fefefe;
     --text: #222;
     --label: #5b5b5b;
@@ -18,7 +18,7 @@
 }
 
 [data-theme="dark"] {
-    --highlight: blue;
+    --highlight: #be1931;
     --background: #222;
     --text: #c9c9c9;
     --label: #b0b0b0;
@@ -116,12 +116,9 @@ h1 {
 
 .headerIcon {
     position: relative;
-    top: 3px;
-    filter: contrast(10);
-}
-
-html[data-theme="dark"] .headerIcon {
-    filter: contrast(0);
+    top: 15px;
+    margin-right: -28px;
+    left: -12px;
 }
 
 h2 {
@@ -138,7 +135,7 @@ label {
     color: var(--label);
 }
 
-object {
+object:not(.headerIcon) {
     filter: var(--objectColor);
 }
 
@@ -196,6 +193,10 @@ button {
 
 button:hover {
     opacity: .8;
+}
+
+.submitButton {
+    margin: 1rem 0;
 }
 
 /** SOURCE CODE BUTTON **/
