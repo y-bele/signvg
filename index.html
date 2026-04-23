@@ -83,12 +83,22 @@
                         <input type="text" id="coopMastodonUser" name="coopMastodonUser">
                     </div>
 
-                    <div title="SVG etiketari fill currentColor gehitu, logoak irakurle ilun eta argietan kontraste egokia izango duela ziurtatzeko.">
-                        <label for="logoSvg"><object data="assets/img/code.svg" width="12" height="12"></object> Marka SVG:</label>
-                        <input type="text" id="logoSvg" name="logoSvg">
+                    <!-- SVG Upload -->
+                    <div class="fullField">
+                        <label><object data="assets/img/code.svg" width="12"></object> Marka SVG:</label>
+
+                        <div id="svgDropZone" class="drop-zone">
+                            <p>Arrastatu SVG fitxategia hona edo klik egin</p>
+                            <input type="file" id="logoFile" name="logoSvg" accept=".svg" hidden>
+                        </div>
                     </div>
 
-                    <div title="Mezuaren ohar legala txertatzeko gunea. HTML maketazioa erabil dezakezu LOPD, GDPR, edo bestelako orrialde edo arduradunen helbideak txertatzeko.">
+                    <!-- <div title="SVG etiketari fill currentColor gehitu, logoak irakurle ilun eta argietan kontraste egokia izango duela ziurtatzeko.">
+                        <label for="logoSvg"><object data="assets/img/code.svg" width="12" height="12"></object> Marka SVG:</label>
+                        <input type="text" id="logoSvg" name="logoSvg">
+                    </div> -->
+
+                    <div class="fullField" title="Mezuaren ohar legala txertatzeko gunea. HTML maketazioa erabil dezakezu LOPD, GDPR, edo bestelako orrialde edo arduradunen helbideak txertatzeko.">
                         <label for="legalText"><object data="assets/img/code.svg" width="12" height="12"></object> Ohar legala:</label>
                         <input type="text" id="legalText" name="legalText">
                     </div>
